@@ -31,9 +31,15 @@ private:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	UCameraComponent* FPCamera;
 
+	/** 第一人称手臂骨骼网格组件，用于显示武器等物品 */
 	UPROPERTY(Category=Character,VisibleAnywhere,BlueprintReadOnly,meta=(AllowPrivateAccess="true"))
 	USkeletalMeshComponent* FPArmMesh;
 
+	/** 手臂附件骨骼网格体 */
+	UPROPERTY(Category=Character,VisibleAnywhere,BlueprintReadOnly,meta=(AllowPrivateAccess="true"))
+	USkeletalMeshComponent* FPArmMesh2;
+
+	/** 第三人称骨骼网格组件，用于显示角色模型 */
 	UPROPERTY(Category=Character,VisibleAnywhere,BlueprintReadOnly,meta=(AllowPrivateAccess="true"))
 	USkeletalMeshComponent* TPMesh;
 
